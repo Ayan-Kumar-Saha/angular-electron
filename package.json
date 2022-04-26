@@ -8,7 +8,8 @@
     "build": "ng build",
     "watch": "ng build --watch --configuration development",
     "test": "ng test",
-    "electron-build": "ng build && electron ."
+    "electron-build": "ng build && electron .",
+    "electron-rebuild": "electron-rebuild ."
   },
   "private": true,
   "dependencies": {
@@ -20,8 +21,10 @@
     "@angular/platform-browser": "~13.3.0",
     "@angular/platform-browser-dynamic": "~13.3.0",
     "@angular/router": "~13.3.0",
+    "node-pty": "^0.10.1",
     "rxjs": "~7.5.0",
     "tslib": "^2.3.0",
+    "xterm": "^4.18.0",
     "zone.js": "~0.11.4"
   },
   "devDependencies": {
@@ -31,6 +34,7 @@
     "@types/jasmine": "~3.10.0",
     "@types/node": "^12.11.1",
     "electron": "^18.1.0",
+    "electron-rebuild": "^3.2.7",
     "jasmine-core": "~4.0.0",
     "karma": "~6.3.0",
     "karma-chrome-launcher": "~3.1.0",
